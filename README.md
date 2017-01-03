@@ -8,24 +8,24 @@ The game is displayed over VGA; all of the games physics and graphics are determ
 I have included both my initial proposal and final lab report; for an understanding of how the game (its physics, graphics, etc,) work, the final lab report provides comprehensive diagrams and explanations. 
 
 ##Heres what the files do:
-**keyboard.sv: **read inputs from ps/2 keyboard 
+**keyboard.sv:**read inputs from ps/2 keyboard 
 
-**ball.sv: **control movement of player based on key inputs
+**ball.sv:**control movement of player based on key inputs
 
-**sprite.sv: **
+**sprite.sv:**
 stores the images for most of the enviornment
 
-**hero_sprite_decider.sv: **
+**hero_sprite_decider.sv:**
 takes input from Framedecider and decides whether the player is powered up or not
 
-**Framedecider.sv: **
+**Framedecider.sv:**
 makes all of the games decisions + graphics; outputs "value" which is the color of the pixel
 
 **scorecounter.sv:**
 takes increments from Framedecider and sends back the current score
 
-**color_mapper.sv: **
+**color_mapper.sv:**
 takes in value and converts into RGB value's for VGA
 
-**VGA_controller.sv: **
+**VGA_controller.sv:**
 takes output of color_mapper and displays onscreen
