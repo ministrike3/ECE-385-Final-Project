@@ -5,7 +5,7 @@ The point of the game is to help Neil collect ECE385 mastery (There were 9 labs,
 
 The game is displayed over VGA; all of the games physics and graphics are determined in hardware. 
 
-I have included both my initial proposal and final lab report; for an understanding of how the game (its physics, graphics, etc,) work, the final lab report provides comprehensive diagrams and explanations. 
+I worked on this game with my partner Siddhant Jain; we have included both our initial proposal and final lab report; for an understanding of how the game (its physics, graphics, etc,) work, the final lab report provides comprehensive diagrams and explanations. 
 
 ##Heres what the files do:
 **keyboard.sv:**read inputs from ps/2 keyboard 
