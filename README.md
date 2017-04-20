@@ -9,7 +9,7 @@ I worked on this game with my partner Siddhant Jain (github: Siddhant-Jain); we 
 
 I would like to thank Rishi Thakker for providing several scripts that converted images into some sort of arrays; those scripts are linked : https://github.com/Atrifex/ECE385-HelperTools. We wrote some additional python scripts to convert the output of these scripts into the arrays, format, and encoding that we needed.   
 
-##Heres what the files do:##
+## Heres what the files do:
 **keyboard.sv:** read inputs from ps/2 keyboard 
 
 **ball.sv:** control movement of player based on key inputs
