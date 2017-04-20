@@ -7,10 +7,12 @@ The game is displayed over VGA; all of the games physics and graphics are determ
 
 I worked on this game with my partner Siddhant Jain (github: Siddhant-Jain); we have included both our initial proposal and final lab report; for an understanding of how the game (its physics, graphics, etc,) work, the final lab report provides comprehensive diagrams and explanations. 
 
-##Heres what the files do:
-**keyboard.sv:**read inputs from ps/2 keyboard 
+I would like to thank Rishi Thakker for providing several scripts that converted images into some sort of arrays; those scripts are linked : https://github.com/Atrifex/ECE385-HelperTools. We wrote some additional python scripts to convert the output of these scripts into the arrays, format, and encoding that we needed.   
 
-**ball.sv:**control movement of player based on key inputs
+##Heres what the files do:##
+**keyboard.sv:** read inputs from ps/2 keyboard 
+
+**ball.sv:** control movement of player based on key inputs
 
 **sprite.sv:**
 stores the images for most of the enviornment
