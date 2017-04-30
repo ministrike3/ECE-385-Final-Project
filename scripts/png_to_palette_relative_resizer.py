@@ -118,8 +118,8 @@ for y in range(0,yval):
             values = "42"
         if values == "7":
             values = "0"
-        if values != "0":
-            values = "1"
+#        if values != "0":
+#            values = "1"
         swagger = swagger+values
         if(x<xval-1):
             swagger=swagger+(",")
