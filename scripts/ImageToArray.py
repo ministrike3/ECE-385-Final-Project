@@ -11,7 +11,7 @@ def rgb_to_hex(num):
     h = str(num)
     return int(h[0:4], 16), int(('0x' + h[4:6]), 16), int(('0x' + h[6:8]), 16)
 filename = input("What's the image name? ")
-new_w, new_h = map(int, input("What's the new height x width? Like 28 28. ").split(' '))
+new_w, new_h = map(int, input("What's the new width x height? Like 40 80. ").split(' '))
 palette_hex = ['0xFF00FF', '0x000000', '0x101010', '0xF8F8F8', '0xA7A7A7', '0xFFD2B8', '0xFFD3BA', '0xFFFFFF',
 '0xFFA23C', '0xFFDE78', '0xF00000', '0xFF0000', '0x9A9A9A','0x431313', '0xF44418', '0x5C3C25' ,
 '0xFF7233', '0xFA9A6C', '0xFFD3BA', '0x736037', '0xB3C2D4', '0x003C86',
@@ -47,7 +47,11 @@ for y in range(im.size[1]):
         i += 1
 outFile.close()
 #--------------
-# everything about is a very slightly modified version of github user atrifax's ECE385 helper tool set
+# everything above is a very slightly modified version of github user atrifex's 
+#repo named ECE385-helper tools 
+#I wanted the ability to have my sprites available to me as arrays 
+#So i changed his hex output into decimal
+#and then wrote a bit down here that reformats it into the right array 
 os.system('cls' if os.name == 'nt' else 'clear')
 name = "./sprite_bytes/" + filename + '.txt'
 rawtxt =  open(name, "r")
@@ -118,8 +122,6 @@ for y in range(0,yval):
             values = "42"
         if values == "7":
             values = "0"
-#        if values != "0":
-#            values = "1"
         swagger = swagger+values
         if(x<xval-1):
             swagger=swagger+(",")
